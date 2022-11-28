@@ -1,0 +1,49 @@
+body{
+    margin: 0 auto;
+    min-width: 1400px;
+    color: white;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px 200px;
+    border-bottom: 3px solid white;
+}
+.logo{
+    display: flex;
+    background-color: rgb(34, 34, 143);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif ;
+    padding: 10px 200px;
+}
+#v_hr{
+    margin: 0 10px;
+    
+}
+.search{
+    float: right;
+    margin: -80px 200px 0 0;
+}
+.search textarea{
+    padding: 10px;
+}
+.main{
+    background-image: url(https://www.architime.ru/specarch/henning_larsen_architects/2.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
+    padding: 100px 0 0 200px;
+}
+.main h1{
+    margin: 0;
+    font-size: 50px;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
