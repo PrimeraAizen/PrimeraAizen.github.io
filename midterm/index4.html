@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="style.css">
+    <title>Apple Store</title>
+</head>
+<body>
+    <div class="header">
+
+   
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="apple.png" width="60px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Магазин</a></li>
+                    <li><a href="index2.html">Новинки</a></li>
+                    <li><a href="index1.html">Продукты</a></li>
+                    <li><a href="index4.html">Часы</a></li>
+                    <li><a href="index3.html">Стив Джобс</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png"  width="30px" height="30px"  class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="small-container2x">
+            <div class="row">
+              <div class="col-2">
+                  <img src="watch2.jfif" style="width:100%;" >
+              </div>  
+              <div class="col-2">
+                 
+                  <h1>Apple Watch 1,2,3,4...</h1>
+                  <small>Увеличенный дисплей меняет всё. Он приносит ещё больше пользы, потому что информацию на экране видно лучше и пользоваться часами заметно удобнее. В модели Series 7 воплотились наши самые грандиозные и самые яркие идеи.
+                  </small>
+                <a href="index1.html" class="button" id="explore">Подробнее</a>
+              </div>
+              <div class="col-3">
+                  <img src="watch3.jfif" >
+                  <h4>Apple Watch Series 7</h4>
+                  <small>От 36 990 pyб.
+                  </small>
+              </div> 
+              <div class="col-3">
+                  <img src="watch4.jfif" >
+                  <h4>Apple Watch SE</h4>
+                  <small>От 24 990 pyб.
+                  </small>
+              </div>  
+              <div class="col-3">
+                  <img src="watch5.jfif" >
+                  <h4>Apple Watch Series 3</h4>
+                  <small>От 17 990 pyб.
+                  </small>
+              </div>   
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    <div class="footer_container">
+        <div class="footer_mini">
+            <div class="row_footer">
+                    <img src="music.png">
+            </div>
+        </div>
+    </div> 
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight = "0px"
+        ){
+            MenuItems.style.maxHeight ="200px"
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+
+</script>
+             
+</body>
+</html>
