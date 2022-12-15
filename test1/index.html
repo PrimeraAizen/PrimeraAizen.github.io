@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        .container{
+
+        .container {
             background-color: #000;
             width: 100%;
             height: 100vh;
@@ -19,7 +21,8 @@
             justify-content: center;
             align-items: center;
         }
-        .square{
+
+        .square {
             width: 100px;
             height: 100px;
             background-color: #fff;
@@ -31,12 +34,29 @@
             color: #000;
             cursor: pointer;
         }
+        .dark{
+            background-color: #fff;
+            color: #000;
+        }
+        .dark .square{
+            background-color: #000;
+            color: #fff;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        
-        <div class="square"></div>
+        <div class="square" onclick="dark()"></div>
     </div>
+<script>
+    function dark(){
+        document.getElementsByClassName('container')[0].classList.add('dark');
+    }
+    function light(){
+        document.getElementsByClassName('container')[0].classList.remove('dark');
+    }
+</script>
 </body>
+
 </html>
