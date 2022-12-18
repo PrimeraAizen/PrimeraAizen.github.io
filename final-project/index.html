@@ -7,15 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
     <nav id="navbar">
-        <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Apple_logo_grey.svg" alt=""
-                style="width: 14px;"></a>
+        <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Apple_logo_grey.svg" alt="" id="icon"></a>
         <ul id="menu">
-            <li></li>
             <li><a href="#">Mac</a></li>
             <li><a href="#">iPad</a></li>
             <li><a href="#">iPhone</a></li>
@@ -24,6 +22,7 @@
             <li><a href="#">About us</a></li>
             <li><a href="#">Sign up</a></li>
         </ul>
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
     </nav>
     <div class="container">
         <div class="iPad">
@@ -32,10 +31,9 @@
             <p>Available starting 10.26</p>
             <div class="links">
                 <a href="">Learn more ></a>
-                <a href="" style="margin-left: 35px;">Order now ></a>
             </div>
             <img src="https://www.apple.com/newsroom/images/product/ipad/standard/apple_new-ipad-air_available_10162020.jpg.og.jpg?202208160802"
-                style="width: 700px;">
+                id="ipadimg">
 
         </div>
         <div class="iPhone14pro">
@@ -44,42 +42,38 @@
             <h3>Pro.Beyond.</h3>
             <div class="links">
                 <a href="">Learn more ></a>
-                <a href="" style="margin-left: 35px;">Buy ></a>
             </div>
             <img src="https://www.apple.com/v/iphone-14-pro/b/images/meta/iphone-14-pro_overview__e2a7u9jy63ma_og.png"
-                alt="" style="">
+                alt="">
         </div>
         <div class="iPhone14">
             <h2>iPhone 14</h2>
             <h3>Big and Bigger</h3>
             <div class="links">
                 <a href="">Learn more ></a>
-                <a href="" style="margin-left: 35px;">Buy ></a>
             </div>
             <img src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-iPhone-14-Plus-hero-220907_Full-Bleed-Image.jpg.large.jpg"
                 alt="" style="">
         </div>
         <div class="sections">
             <div class="blocks">
-                <div class="block">
-                    <img src="https://i.citrus.world/uploads/promo/apple/iwatch/ultra/logo.svg?_t=1666083492" alt="">
-                    <h3>Adventure awaits.</h3>
-                    <div class="links">
-                        <a href="">Learn more ></a>
-                        <a href="" style="margin-left: 35px;">Buy ></a>
-                    </div>
-                    <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQDY3ref_VW_PF+watch-49-titanium-ultra_VW_PF_WF_SI+watch-face-49-alpine-ultra_VW_PF_WF_SI?wid=2000&hei=2000&fmt=png-alpha&.v=1660713658959,1660927567677,1660927561152"
-                        style="width: 400px;margin-top: 75px;" alt="">
-                </div>
                 <div class="block" style="background-color: black ;color: white;">
                     <img src="https://imaginestore.org/wp-content/uploads/2020/09/logo.png" alt="">
                     <h3>A healthy leap ahead.</h3>
                     <div class="links" style="margin-bottom: 111px;">
                         <a href="">Learn more ></a>
-                        <a href="" style="margin-left: 35px;">Buy ></a>
                     </div>
                     <img src="https://www.apple.com/v/apple-watch-series-8/b/images/overview/hero/hero_static__c9d1bk9frtua_large.jpg"
-                        style="width: 513px;" alt="">
+                        id="watch6" alt="">
+                </div>
+                <div class="block">
+                    <img src="https://i.citrus.world/uploads/promo/apple/iwatch/ultra/logo.svg?_t=1666083492" alt="">
+                    <h3>Adventure awaits.</h3>
+                    <div class="links">
+                        <a href="">Learn more ></a>
+                    </div>
+                    <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQDY3ref_VW_PF+watch-49-titanium-ultra_VW_PF_WF_SI+watch-face-49-alpine-ultra_VW_PF_WF_SI?wid=2000&hei=2000&fmt=png-alpha&.v=1660713658959,1660927567677,1660927561152"
+                        style="width: 400px;margin-top: 75px;" alt="">
                 </div>
             </div>
             <div class="blocks">
@@ -91,10 +85,9 @@
                     <p>Available starting 10.26</p>
                     <div class="links" style="margin-bottom: 111px;">
                         <a href="">Learn more ></a>
-                        <a href="" style="margin-left: 35px;">Order now ></a>
                     </div>
                     <img src="https://www.iguides.ru/upload/medialibrary/34d/34dfc875f93beb47d701783f9e98432e.png"
-                        alt="" style="width: 560px;">
+                        alt="" id="ipadproimg">
                 </div>
                 <div class="block" style="background-color: white;">
                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Apple_TV_4K_%28logo%29.svg/1280px-Apple_TV_4K_%28logo%29.svg.png"
@@ -112,10 +105,9 @@
                     <h3>Rebuild from the sound up.</h3>
                     <div class="links" style="margin-bottom: 111px;">
                         <a href="">Learn more ></a>
-                        <a href="" style="margin-left: 35px;">Buy ></a>
                     </div>
                     <img src="https://stereo-news.com/wp-content/uploads/2022/09/apple-airpods-pro-2nd-gen-1170x720.jpg"
-                        style=" width: 430px;" alt="">
+                        id="airpods-img" alt="">
                 </div>
                 <div class="block" style="background-color: white;">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Apple_Card.svg/1280px-Apple_Card.svg.png"
@@ -124,7 +116,6 @@
                     <h3>with every purchase</h3>
                     <div class="links" style="margin-bottom: 111px;">
                         <a href="">Learn more ></a>
-                        <a href="" style="margin-left: 35px;">Apply now ></a>
                     </div>
                     <img src="https://www.apple.com/newsroom/images/product/apple-card/standard/Apple-Card-available-today-Apple-Card-082019_inline.jpg.large.jpg"
                         alt="" style="width: 330px;">
@@ -158,7 +149,7 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About us</a></li>
                                 <li><a href="contactus.html">Contact us</a></li>
-                                <li><a target="_blank" href="https://www.instagram.com/0spanu/">My inst</a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/s_oulking/">My inst</a></li>
                             </ul>
                         </div>
 
@@ -196,7 +187,7 @@
                 </div>
             </footer>
     </div>
-
+<script src="script.js"></script>
 </body>
 
 </html>
