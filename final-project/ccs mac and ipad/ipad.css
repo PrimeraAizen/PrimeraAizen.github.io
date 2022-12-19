@@ -1,1 +1,452 @@
 @import "reset.css";
+.container {
+    position: relative;
+    width: 100%;  /* max width is 1230, but we can reduce it */
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-family: Helvetica;
+}
+
+
+.container2 {
+    position: relative;
+    width: 100%;  /* max width is 1230, but we can reduce it */
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-family: Helvetica;
+}
+
+
+.sec-airpods {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.header {  /* don't use mt, because you won't be able to color your top side */
+    background-color: #ebebeb;
+    text-align: center;
+}
+
+
+.header-content {
+    text-align: center;
+    font-family: helvetica;
+}
+
+
+
+.header-heading {
+    font-weight: 100;
+    font-size: 27px;
+    letter-spacing: 0;
+    margin: 40px 0 5px 0;
+}
+
+
+.header-heading-1 {
+    font-weight: 100;
+    font-size: 27px;
+    letter-spacing: 0;
+    margin: 10px 0 5px 0;
+}
+
+
+.header-heading-2 {
+    font-weight: 600;
+    font-size: 45px;
+}
+
+
+.header-heading2 {
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 70px;
+}
+
+
+.header-heading3 {
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    font-size: 45px;
+    margin-bottom: 90px;
+}
+
+
+.header-heading4 {
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+.header-heading5 {
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+h4 {
+    color: rgb(187, 39, 39);
+}
+
+
+span {
+    font-size: 20px;
+}
+
+
+.header__nav {
+    display: flex;
+    justify-content: center; /* space between sends one element to one side, second element to the other side */
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0,0,0,0.809);
+    padding: 12px;
+}
+
+
+.header__nav2 {
+    display: flex;
+    justify-content: center; /* space between sends one element to one side, second element to the other side */
+    align-items: center;
+    text-align: center;
+    background-color: rgba(220, 220, 220, 0.809);
+    padding: 12px;
+}
+
+
+.nav {
+    text-decoration: none;
+}
+
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    column-gap: 50px;
+}
+
+
+.nav__button {
+    display: none;
+}
+
+
+.nav__link {
+    color: #a9a9a9;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+}
+
+
+.nav__link:hover {
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+
+.nav__link:active {
+    color: black;
+}
+
+
+.nav-link2 {
+    color: #252525;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+} 
+
+
+.nav-link2:hover {
+    color: #ffffff;
+    transition: all 0.2s ease;
+} 
+
+
+.nav-link2:active {
+    color: black;
+}
+
+
+.pro-link {
+    text-decoration: none;
+}
+
+
+.pro-link:hover {
+    text-decoration: underline;
+}
+
+
+.section-items{
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+    font-family: helvetica;
+}
+
+
+.item-header{
+	font-size: 50px;
+	margin: 80px 0 90px 0;
+	font-weight: 500;
+    font-weight: 600;
+}
+
+
+.section-table{
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	justify-content: center;
+}
+
+
+.item{
+	width: 189px;
+	height: 214px;
+}
+
+
+.ipad-img {
+    width: 200;
+    height: 200px;
+}
+
+
+.ipad-img2 {
+    width: 100;
+    height: 200px;
+}
+
+
+.item-desc {
+    font-family: helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 30px 0 10px 0;
+}
+
+.item-desc2 {
+    font-family: helvetica;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 45px;
+    color: #949494;
+}
+
+
+.color-img {
+    margin-top: 14px;
+}
+
+
+.item-name{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+
+.item-subname {
+    color: #949494;
+    font-weight: 100;
+}
+
+
+.item-price{
+	margin-top: 30px;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+
+.item-btn{
+	padding: 6px 18px;
+	background: #06c;
+	border-radius: 50px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	line-height: 1.3;
+    cursor: pointer;
+}
+
+
+.item-link{
+	padding-top: 20px;
+	font-size: 12px;
+    margin-bottom: 50px;
+}
+
+
+.item-link a{
+	text-decoration: none;
+	color: #06c;
+}
+
+/*footer*/
+
+.container-footer{
+	max-width: 1170px;
+	margin: auto;
+    font-family: helvetica;
+    line-height: 2;
+
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+
+.footer-col h4{
+	font-size: 13px;
+	color: #ffffff;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #9537ac;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+
+.footer-col ul li a{
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+.line {
+    display: flex;
+    justify-content: center; 
+}
+
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-family: helvetica;
+    color: rgb(196, 196, 196);
+}
+
+
+hr {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    width: 600px;
+}
+
+
+.h5 {
+    margin-top: 40px;
+}
+
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}

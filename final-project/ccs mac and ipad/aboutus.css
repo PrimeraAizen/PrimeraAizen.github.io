@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+
+.container {
+    max-width: 1230px;  /* max width is 1230, but we can reduce it */
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 35px;  /* don't use mt, because you won't be able to color your top side */
+    background-color: #ebebeb;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between; /* space between sends one element to one side, second element to the other side */
+    align-items: center;
+    margin-bottom: 76px;
+
+}
+
+/* .header__nav {
+    position: fixed;
+} */
+
+.logo {
+    position: relative;
+    font-weight: 900;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #424242;
+    padding:0 12px 3px 0;
+}
+
+.logo::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #6e57e0 ;
+    border-radius: 50%;
+}
+
+
+/* navigation bar */
+
+.nav {
+    text-decoration: none;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    column-gap: 50px;
+
+
+}
+
+.nav__button {
+    display: none;
+}
+
+/* /* .nav__item {
+
+} */
+
+.nav__link {
+    color: #424242;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+} 
+
+.nav__link:hover {
+    color: #6e57e0;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+} 
+
+.nav__link:active {
+    color: black;
+}
+
+/* header */
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__content {
+    max-width: 500px;
+    margin-top: 124px;
+}
+
+.header__heading {
+    font-size: 55px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.9px;
+    color: #353535;
+}
+
+.header__heading2 {
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    color: #535353;
+    margin-top: 15px;
+}
+
+.header__content p {
+    margin-top: 15px;
+    color: #5e5e5e;
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
+
+.about__us {
+    background-color: white;
+    padding: 70px 0;
+}
+
+.us__title {
+    text-align: center;
+}
+
+.us__heading {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #353535;
+}
+
+.us__p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #656565;
+}
+
+.us__row {
+    display: flex;
+    justify-content: center;
+}
+
+.us__intro {
+    color: #4e4e4e;
+    font-size: 17px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 2.5;
+    margin-top: 50px;
+    
+}
+
+
+/* .us__intro {
+    align-items:;
+} */
+
+/* services */
+
+.services {
+    padding: 90px 0;
+    background-color: #ebebeb;
+}
+
+.services__title {
+    text-align: center;
+}
+
+.services__heading {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #353535;
+}
+
+.services__p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #656565;
+}
+
+.services__row {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    margin-top: 50px;
+    line-height: 2;
+    /* column-gap: 30px; */ /* расстояние между дивами */
+    /* flex-wrap: wrap; для того чтобы блоки адаптировались по размеру экрана */
+}
+
+.service__card {
+    min-width: 370px;
+    /* flex: 1 1 0; */
+}
+
+.service__card__title {
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 1px;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.service__card__img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    
+}
+
+.service__card p {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 2;
+}
+
+/* projects */
+
+.projects {
+    background-color: #f6f6f6;
+    padding: 90px 0;
+}
+
+.projects__title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.75px;
+}
+
+.project1 {
+    text-align: center;
+}
+
+.project1 img {
+    margin-bottom: 40px;
+    width: 60%;
+    height: 350px;
+}
+
+.project__title {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.project__title a {
+    color: wheat;
+    text-decoration: none;
+    font-family: helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.project__title a:hover {
+    color: #6e57e0;
+    text-decoration: none;
+    font-family: helvetica, sans-serif;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+
+
+/* contact me */
+
+.contacts {
+    padding: 90px 0;
+    text-align: center;
+}
+
+.contacts__title {
+    margin-bottom: 40px;
+    font-family: Roboto, sans-serif;
+    font-size: 35px;
+    letter-spacing: 0.5px;
+}
+
+.contacts__content {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.contacts__content p + p {
+    margin-top: 1em;
+}
+
+.contacts__btn {
+    margin-bottom: 80px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #6e57e0;
+    padding: 7px 22px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: wheat;
+    text-decoration: none;
+    font-family: helvetica, sans-serif;
+    font-weight: 300;
+
+}
+
+.btn:hover, btn:focus {
+    background-color: #57e089;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn:active {
+    position: relative;
+    top: 2px;
+    background-color: #fff;
+}
+
+.contacts__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    margin-bottom: 40px;
+}
+
+.contacts__footer {
+    color: #656565;
+    font-family: Helvetica, sans-serif;
+}
