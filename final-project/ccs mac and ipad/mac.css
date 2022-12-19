@@ -18,7 +18,9 @@ html {
     margin-top: 30px;
     
 }
-
+#icon{
+    width: 19px;
+}
 
 .container2 {
     position: relative;
