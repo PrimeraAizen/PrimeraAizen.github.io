@@ -4,6 +4,21 @@
     padding: 0;
 }
 
+
+.container{
+    position: relative;
+    width: 100%;  /*max width is 1230, but we can reduce it*/
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-family: Helvetica;
+}
+
 .header{
     background-color: #ebebeb;
     text-align: center;
