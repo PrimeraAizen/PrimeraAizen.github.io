@@ -134,3 +134,33 @@ span{
 }
 
 
+.nav__link{
+    color: #a9a9a9;
+    font-family: Roberto, sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+}
+
+
+.nav__link:hover{
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+
+.nav__link:active{
+    color: black;
+}
+
+
+.pro-link{
+    text-decoration: none;
+}
+
+
+.pro-link:hover{
+    text-decoration: underline;
+}
+
