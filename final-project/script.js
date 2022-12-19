@@ -1,9 +1,5 @@
-var MenuItems = document.getElementById("menu");
-MenuItems.style.maxHeight = "0px";
-function menutoggle() {
-  if ((MenuItems.style.maxHeight = "0px")) {
-    MenuItems.style.maxHeight = "200px";
-  } else {
-    MenuItems.style.maxHeight = "0px";
-  }
-}
+let menu = document.getElementsByClassName("desktop-nav")[0]
+let menuButton = document.getElementsByClassName("menu-icon-container")[0];
+menuButton.addEventListener("click", function() {
+    document.getElementsByClassName("nav-container").classList.add("active");
+})
