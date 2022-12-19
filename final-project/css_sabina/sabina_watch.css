@@ -4,6 +4,21 @@
     padding: 0;
 }
 
+
+.container{
+    position: relative;
+    width: 100%;  /*max width is 1230, but we can reduce it*/
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-family: Helvetica;
+}
+
 .header{
     background-color: #ebebeb;
     text-align: center;
@@ -73,4 +88,49 @@
     letter-spacing: 0.6px;
     margin-bottom: 10px;
 }
+
+
+h4{
+    color: rgb(187, 39, 39);
+}
+
+
+span{
+    font-size: 20px;
+}
+
+
+.header__nav{
+    display: flex;
+    justify-content: center; /*space between sends one element to one side,second element to the other side*/
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    padding: 12px;
+}
+
+
+.header__nav2{
+    display: flex;
+    justify-content: center; /*space between sends one element to one side,second element to the other side*/
+    align-items: center;
+    text-align: center;
+    background-color: rgb(252, 249, 249);
+    padding: 12px;
+}
+
+
+.nav{
+    text-decoration: none;
+}
+
+
+.nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    column-gap: 50px;
+}
+
 
