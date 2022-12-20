@@ -293,3 +293,47 @@ hr {
     
     
 }
+@media only screen and (max-width: 800px) and (min-width:400px){
+  .container {
+    min-width: 1200px;
+}
+#watch6{
+    width: 35%;
+}
+.blocks{
+    display: block;
+}
+.block{
+    width: 100%;
+}
+#icon{
+    width: 24px;
+}
+.menu-icon {
+    visibility: visible;
+    position: absolute;
+    right: 20px;
+}
+#navbar ul {
+    display: none;
+}
+#ipadimg{
+    width: 60%;
+}
+.ipad{
+    width: 100%;
+}
+footer{
+    width: 100%;
+}
+.iPhone14pro img{
+    width: 80%;
+}
+#ipadproimg{
+    width: 50%;
+}
+#airpods-img{
+  width: 46%;
+}
+
+}
