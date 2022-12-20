@@ -26,7 +26,13 @@ inputs.forEach(input => {
 })
 
 
-function reg_php(uname, phone, email, message) {
+let uname = document.getElementById("username").innerHTML;
+let phone = document.getElementById("phone").innerHTML;
+let email = document.getElementById("email").innerHTML;
+let message = document.getElementById("message").innerHTML;
+
+
+function reg_php() {
       $.ajax({
         url: "index.php",
         type: "POST",
